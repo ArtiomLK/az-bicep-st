@@ -64,6 +64,8 @@ az storage blob copy start-batch \
 - Azure Storage Accout
 - [MS | Docs | Storage account overview][1]
 - [MS | Docs | az storage blob copy][2]
+- [MS | Learn |Explore Azure Blob storage][7]
+  - [Explore Azure Blob storage][8]
 
 [1]: https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview
 [2]: https://docs.microsoft.com/en-us/cli/azure/storage/blob/copy
@@ -71,3 +73,5 @@ az storage blob copy start-batch \
 [4]: https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview#types-of-storage-accounts
 [5]: https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-block-blob-premium#cost-effectiveness
 [6]: https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview#legacy-storage-account-types
+[7]: https://learn.microsoft.com/en-us/training/modules/explore-azure-blob-storage
+[8]: https://learn.microsoft.com/en-us/training/modules/explore-azure-blob-storage/2-blob-storage-overview
