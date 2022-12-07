@@ -30,6 +30,8 @@
 
 - [Cost Effectiveness][5]
 
+  - Premium block blob storage accounts have a higher storage cost but a lower transaction cost as compared to standard general-purpose v2 accounts. If your applications and workloads execute a large number of transactions, premium blob blob storage can be cost-effective, especially if the workload is write-heavy.
+
 - [Legacy storage account types][6]
 
   - Standard general-purpose v1
