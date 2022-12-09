@@ -109,7 +109,7 @@ az storage blob copy start-batch \
   - [Evaluate Azure Storage redundancy options][11]
 - [MS | Learn | Manage the Azure Blob storage lifecycle][12]
   - [Explore the Azure Blob storage lifecycle][13]
-  - [Design Blob storage lifecycle policies][14]
+  - [Discover Blob storage lifecycle policies][14]
   - [Implement Blob storage lifecycle policies][15]
   - [Rehydrate blob data from the archive tier][16]
 
