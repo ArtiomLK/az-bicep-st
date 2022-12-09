@@ -32,6 +32,15 @@
 
   - Premium block blob storage accounts have a higher storage cost but a lower transaction cost as compared to standard general-purpose v2 accounts. If your applications and workloads execute a large number of transactions, premium blob blob storage can be cost-effective, especially if the workload is write-heavy.
 
+- [Lifecycle Management][13]
+
+  - Hot - Optimized for storing data that is accessed frequently.
+  - Cool - Optimized for storing data that is infrequently accessed and stored for at least 30 days.
+  - Archive - Optimized for storing data that is rarely accessed and stored for at least 180 days with flexible latency.
+
+  - Transition blobs to a cooler storage tier (hot to cool, hot to archive, or cool to archive) to optimize for performance and cost
+  - Data stored in a premium block blob storage account cannot be tiered to Hot, Cool, or Archive using Set Blob Tier or using Azure Blob Storage lifecycle management
+
 - [Legacy storage account types][6]
 
   - Standard general-purpose v1
@@ -88,10 +97,12 @@ az storage blob copy start-batch \
 - Azure Storage Account
 - [MS | Docs | Storage account overview][1]
 - [MS | Docs | az storage blob copy][2]
-- [MS | Learn |Explore Azure Blob storage][7]
+- [MS | Learn | Explore Azure Blob storage][7]
   - [Explore Azure Blob storage][8]
   - [Explore Azure Storage security features][10]
   - [Evaluate Azure Storage redundancy options][11]
+- [MS | Learn | Manage the Azure Blob storage lifecycle][12]
+  - [Explore the Azure Blob storage lifecycle][13]
 
 [1]: https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview
 [2]: https://docs.microsoft.com/en-us/cli/azure/storage/blob/copy
@@ -104,3 +115,5 @@ az storage blob copy start-batch \
 [9]: https://learn.microsoft.com/en-us/training/modules/explore-azure-blob-storage/3-blob-storage-resources
 [10]: https://learn.microsoft.com/en-us/training/modules/explore-azure-blob-storage/4-blob-storage-security
 [11]: https://learn.microsoft.com/en-us/training/modules/explore-azure-blob-storage/5-azure-storage-redundancy
+[12]: https://learn.microsoft.com/en-us/training/modules/manage-azure-blob-storage-lifecycle/
+[13]: https://learn.microsoft.com/en-us/training/modules/manage-azure-blob-storage-lifecycle/2-blob-storage-lifecycle
