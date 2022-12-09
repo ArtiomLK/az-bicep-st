@@ -41,6 +41,12 @@
   - Transition blobs to a cooler storage tier (hot to cool, hot to archive, or cool to archive) to optimize for performance and cost
   - Data stored in a premium block blob storage account cannot be tiered to Hot, Cool, or Archive using Set Blob Tier or using Azure Blob Storage lifecycle management
 
+  - [Rehydrate blob data from the archive tier][16]
+    - Copying an archived blob to an online destination tier is supported within the same storage account only. You cannot copy an archived blob to a destination blob that is also in the archive tier.
+    - You must copy the archived blob to a new blob with a different name or to a different container. You cannot overwrite the source blob by copying to the same blob.
+    - The second option for rehydrating a blob from the archive tier to an online tier is to change the blob's tier by calling Set Blob Tier. With this operation, you can change the tier of the archived blob to either hot or cool.
+    - Once a Set Blob Tier request is initiated, it cannot be canceled. During the rehydration operation, the blob's access tier setting continues to show as archived until the rehydration process is complete.
+
 - [Legacy storage account types][6]
 
   - Standard general-purpose v1
@@ -103,6 +109,9 @@ az storage blob copy start-batch \
   - [Evaluate Azure Storage redundancy options][11]
 - [MS | Learn | Manage the Azure Blob storage lifecycle][12]
   - [Explore the Azure Blob storage lifecycle][13]
+  - [Design Blob storage lifecycle policies][14]
+  - [Implement Blob storage lifecycle policies][15]
+  - [Rehydrate blob data from the archive tier][16]
 
 [1]: https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview
 [2]: https://docs.microsoft.com/en-us/cli/azure/storage/blob/copy
@@ -117,3 +126,6 @@ az storage blob copy start-batch \
 [11]: https://learn.microsoft.com/en-us/training/modules/explore-azure-blob-storage/5-azure-storage-redundancy
 [12]: https://learn.microsoft.com/en-us/training/modules/manage-azure-blob-storage-lifecycle/
 [13]: https://learn.microsoft.com/en-us/training/modules/manage-azure-blob-storage-lifecycle/2-blob-storage-lifecycle
+[14]: https://learn.microsoft.com/en-us/training/modules/manage-azure-blob-storage-lifecycle/3-blob-storage-lifecycle-policies
+[15]: https://learn.microsoft.com/en-us/training/modules/manage-azure-blob-storage-lifecycle/4-add-policy-blob-storage
+[16]: https://learn.microsoft.com/en-us/training/modules/manage-azure-blob-storage-lifecycle/5-rehydrate-blob-data
