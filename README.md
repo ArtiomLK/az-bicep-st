@@ -112,6 +112,7 @@ az storage blob copy start-batch \
   - [Discover Blob storage lifecycle policies][14]
   - [Implement Blob storage lifecycle policies][15]
   - [Rehydrate blob data from the archive tier][16]
+- [MS | Learn | Work with Azure Blob storage][17]
 
 [1]: https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview
 [2]: https://docs.microsoft.com/en-us/cli/azure/storage/blob/copy
@@ -129,3 +130,4 @@ az storage blob copy start-batch \
 [14]: https://learn.microsoft.com/en-us/training/modules/manage-azure-blob-storage-lifecycle/3-blob-storage-lifecycle-policies
 [15]: https://learn.microsoft.com/en-us/training/modules/manage-azure-blob-storage-lifecycle/4-add-policy-blob-storage
 [16]: https://learn.microsoft.com/en-us/training/modules/manage-azure-blob-storage-lifecycle/5-rehydrate-blob-data
+[17]: https://learn.microsoft.com/en-us/training/modules/work-azure-blob-storage/
