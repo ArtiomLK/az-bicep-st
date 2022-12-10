@@ -18,7 +18,6 @@ static async Task ProcessAsync()
   BlobServiceClient blobServiceClient = new BlobServiceClient(storageConnectionString);
 
   // COPY EXAMPLE CODE BELOW HERE
-
   // ------------------------------------------------------------------------------------------------
   // Create a container
   // ------------------------------------------------------------------------------------------------
