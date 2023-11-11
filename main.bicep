@@ -25,7 +25,7 @@ param name string
   'Premium_LRS'
   'Premium_ZRS'
 ])
-param sku string
+param sku string = 'Standard_LRS'
 
 @description('Storage Account type')
 @allowed([
@@ -33,7 +33,7 @@ param sku string
   'FileStorage'
   'BlockBlobStorage'
 ])
-param kind string
+param kind string = 'StorageV2'
 
 resource stg 'Microsoft.Storage/storageAccounts@2022-05-01' = {
   name: name
