@@ -12,7 +12,7 @@ param location string = resourceGroup().location
 @minLength(3)
 @maxLength(24)
 @description('Storage Account Name. For example: storagename')
-param st_n string
+param name string
 
 @description('Storage Account type')
 @allowed([
@@ -25,7 +25,7 @@ param st_n string
   'Premium_LRS'
   'Premium_ZRS'
 ])
-param st_sku string
+param sku string = 'Standard_LRS'
 
 @description('Storage Account type')
 @allowed([
@@ -33,15 +33,15 @@ param st_sku string
   'FileStorage'
   'BlockBlobStorage'
 ])
-param st_kind string
+param kind string = 'StorageV2'
 
 resource stg 'Microsoft.Storage/storageAccounts@2022-05-01' = {
-  name: st_n
+  name: name
   location: location
   sku: {
-    name: st_sku
+    name: sku
   }
-  kind: st_kind
+  kind: kind
   properties: {
     supportsHttpsTrafficOnly: true
   }
