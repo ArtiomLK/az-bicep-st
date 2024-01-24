@@ -98,6 +98,12 @@ az storage blob copy start-batch \
 --source-container $st_container_n
 ```
 
+## Troubleshoot
+
+```bash
+nslookup stmyappprodeastus.blob.core.windows.net
+```
+
 ## Additional Info
 
 - Azure Storage Account
